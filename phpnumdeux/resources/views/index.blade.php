@@ -1,6 +1,6 @@
+@extends('layout.app')
 
-<link rel="stylesheet" href="{{ asset('css/index.css') }}">
-
+@section('content')
 <div class="hero-container">     
         <div class="background-wall"></div>             
         <div class="overlay"></div>
@@ -16,3 +16,6 @@
                 <h1 class="main-title">Les Dimension de Minecraft<br>et leur exploration</h1>            
              </main>
 </div>
+@endsection
+
+
