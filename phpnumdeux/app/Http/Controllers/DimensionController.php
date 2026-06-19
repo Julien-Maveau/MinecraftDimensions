@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Dimension;
 use Illuminate\Http\Request;
 
 class DimensionController extends Controller
@@ -14,9 +14,9 @@ class DimensionController extends Controller
 
         return view("index", compact("dimension"));
     }
-    public function show(string $id)
+    public function show($id)
     {
-        $dimension = Dimension::find( $id );
+        $dimension = Dimension::findOrFail( $id );
         return view("show" , ["Dimension" => $dimension ]);
     }
 }
