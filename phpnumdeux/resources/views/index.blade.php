@@ -1,4 +1,4 @@
-@extends('layout.filter')
+
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 
 <div class="hero-container">     
