@@ -10,10 +10,10 @@
             @foreach($dimension as $dimension)
             <div class="card">
                 <div class="card-badges">
-                    <a href="/views/{{ $dim->id }}">
-                        <img src="{{ $dim->img }}" alt="{{ $dim->title }}">
+                    <a href="/views/{{ $dimension->id }}">
+                        <img src="{{ $dimension->img }}" alt="{{ $dimension->title }}">
                     <br>
-                    {{ $dim->title }}
+                    {{ $dimension->title }}
                 </a>
                 </div>
             </div>

@@ -7,7 +7,7 @@ Route::get('/Home', function () {
     return view('index');
 });
 
-Route::get('/index' , [DimensionController::class, 'index']);
+Route::get('/Home' , [DimensionController::class, 'index']);
 
 Route::get('/views/{id}', [DimensionController::class,'show']);
 
