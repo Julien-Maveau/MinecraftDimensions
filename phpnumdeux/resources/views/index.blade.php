@@ -5,15 +5,20 @@
         <div class="background-wall"></div>             
         <div class="overlay"></div>
 
-            <header class="header">
-                <a href="/" class="logo">Minecraft</a>
-                <div class="nav-buttons">
-                    <a href="#" class="btn-login">S'identifier</a>
+        
+        <h1 class="main-title">Les Dimension de Minecraft<br>et leur exploration</h1>            
+            @foreach($dimension as $dimension)
+            <div class="card">
+                <div class="card-badges">
+                    <a href="/views/{{ $dim->id }}">
+                        <img src="{{ $dim->img }}" alt="{{ $dim->title }}">
+                    <br>
+                    {{ $dim->title }}
+                </a>
                 </div>
-            </header>
-
+            </div>
+            @endforeach
             <main class="main-content">
-                <h1 class="main-title">Les Dimension de Minecraft<br>et leur exploration</h1>            
              </main>
 </div>
 @endsection

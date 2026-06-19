@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Dimension;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
 
 class DimSeeder extends Seeder
@@ -13,21 +13,21 @@ class DimSeeder extends Seeder
         Dimension::create([
             'title' => 'Overworld',
             'content' => 'The main dimension where players begin.',
-            'img' => 'overworld.png',
+            'img' => "{{ asset('img/overworld.png') }}",
             'tags' => 'vanilla',
         ]);
 
         Dimension::create([
             'title' => 'Nether',
             'content' => 'A dangerous fiery dimension.',
-            'img' => 'nether.png',
+            'img' => "{{ asset('img/nether.png') }}",
             'tags' => 'vanilla',
         ]);
 
         Dimension::create([
             'title' => 'End',
             'content' => 'Home of the Ender Dragon.',
-            'img' => 'end.png',
+            'img' => "{{ asset('img/End.png') }}",
             'tags' => 'vanilla',
         ]);
     }
