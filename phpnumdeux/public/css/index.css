@@ -1,7 +1,16 @@
 body{
-    background-color: blueviolet;
+    background-color:green;
 }
 
 .hero-container{
-    background-color: black;
+    background-color: 2B0A09;
+}
+
+.header{
+    background-color: 2B0A09;
+}
+
+
+.main-content{
+    background-color: D5DA94;
 }
